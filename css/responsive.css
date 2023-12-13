@@ -2,7 +2,25 @@
     SCREEN XS - 576PX
 ****************************/
 @media all and (max-width: 576px) {
+
+    /************
+        APP-TOP
+    ************/
+    /** SIDEBAR **/
+    :root {
+        --sidebar-l: 50px;
+    }
     
+    /* make some elements disappear */
+    #app__logo,
+    #playlist__nav {
+        display: none;
+    }
+
+    #app__logo-xs {
+        display: block;
+    }
+
     /************
         FOOTER
     ************/
