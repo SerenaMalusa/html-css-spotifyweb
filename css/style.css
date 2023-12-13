@@ -9,24 +9,34 @@
 
     /* spacing */
     --footer-h: 100px;
+    --sidebar-l: 250px;
+}
+
+/*******************************
+    DEBUG
+*******************************/
+.debug {
+    background-color: azure;
+    border: 2px dotted blue;
+    padding: 20px;
 }
 
 /********************************
     RESET
 ********************************/
-*{
-    margin: 0 auto;
-    padding: 0 auto;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-
-img {
-    max-width: 100%;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--body-bg);
+}
+
+img {
+    max-width: 100%;
 }
 
 /*******************************
@@ -45,7 +55,7 @@ body {
 
 /** SIDEBAR **/
 #app__sidebar {
-    width: 250px;
+    width: var(--sidebar-l);
     background-color: var(--sidebar-bg);
 
     flex-shrink: 0;
@@ -62,4 +72,6 @@ body {
 #app__footer {
     background-color: var(--footer-bg);
     height: var(--footer-h);
+
+    justify-content: space-between;
 }
