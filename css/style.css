@@ -3,13 +3,17 @@
 ********************************/
 :root {
     /* palette */
+    --header-bg: #090c118a;
     --body-bg: #141922;
-    --footer-bg: #282828;
     --sidebar-bg: #000000;
+    --footer-bg: #282828;
+    --text-color-1: #5a5a5a;
+    --text-color-2: #f9f9f9;
 
     /* spacing */
-    --footer-h: 100px;
+    --header-h: 100px;
     --sidebar-l: 250px;
+    --footer-h: 100px;
 }
 
 /********************************
@@ -22,8 +26,9 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
     background-color: var(--body-bg);
+    color: var(--text-color-1);
+    font-family: 'Montserrat', sans-serif;
 }
 
 img {
@@ -44,6 +49,25 @@ img {
 *******************************/
 .d-flex {
     display: flex;
+}
+
+/* link */
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* buttons */
+.btn {
+    border-radius: 50px;
+    border: 2px solid var(--text-color-2);
+    padding: 8px 40px;
+    color: var(--text-color-2);
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    cursor: pointer;
 }
 
 /*******************************
@@ -80,6 +104,22 @@ img {
 /** MAIN **/
 #app__main {
     flex-grow: 1;
+}
+
+/* MAIN HEADER */
+#main__header {
+    height: var(--header-h);
+    background-color: var(--header-bg);
+    line-height: calc(var(--header-h)/1.1);
+    text-align: right;
+
+    /* background-color: var(--sidebar-bg);
+    backdrop-filter: opacity(40%); */
+}
+
+#main__header > .btn {
+    margin-right: 20px;
+    vertical-align: middle;
 }
 
 /********************************
