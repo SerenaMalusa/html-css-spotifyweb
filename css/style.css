@@ -104,6 +104,8 @@ img {
 /** MAIN **/
 #app__main {
     flex-grow: 1;
+
+    overflow: auto;
 }
 
 /* MAIN HEADER */
@@ -112,6 +114,10 @@ img {
     background-color: var(--header-bg);
     line-height: calc(var(--header-h)/1.1);
     text-align: right;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
 
     /* background-color: var(--sidebar-bg);
     backdrop-filter: opacity(40%); */
