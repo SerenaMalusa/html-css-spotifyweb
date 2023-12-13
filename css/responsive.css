@@ -1,7 +1,33 @@
 /****************************
+    768PX < SCREEN M < 992PX
+****************************/
+@media all and (max-width: 992px) {
+    
+    /************
+        APP-TOP
+    ************/
+    /** MAIN **/
+    /* MAIN BODY */
+    #main__body .col {
+        width: 25%;
+    }
+
+}
+
+
+/****************************
     576PX < SCREEN S < 768PX
 ****************************/
 @media all and (max-width: 768px) {
+
+    /************
+        APP-TOP
+    ************/
+    /** MAIN **/
+    /* MAIN BODY */
+    #main__body .col {
+        width: 50%;
+    }
 
     /************
         FOOTER
@@ -10,7 +36,7 @@
     #footer__left {
         width: auto;
     }
-    
+
 }
 
 

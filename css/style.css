@@ -46,6 +46,24 @@ img {
 }
 
 /*******************************
+    GRID
+*******************************/
+.container {
+    margin-top: calc(var(--base-space)*2);
+    padding: var(--base-space);
+}
+
+.row {
+    margin: calc(-1 * var(--base-space));
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    padding: var(--base-space);
+}
+
+/*******************************
     UTILITY
 *******************************/
 .d-flex {
@@ -82,8 +100,6 @@ nav .list > li {
 
 nav .hor-nav__li {
     display: inline-block;
-    padding-left: calc(var(--base-space)*5);
-    padding-right: calc(var(--base-space)*5);
 }
 
 /*******************************
@@ -143,11 +159,22 @@ nav .hor-nav__li {
 }
 
 /* MAIN BODY */
+#main__body h2 {
+    padding-bottom:  var(--base-space);
+}
+
+#main__body .col {
+    width: calc(100% / 6);
+}
+
 /* navbar */
 #main__nav {
     text-align: center;
     text-transform: uppercase;
 }
+
+/* recently played */
+
 
 /********************************
     FOOTER
