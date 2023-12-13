@@ -1,5 +1,21 @@
 /****************************
-    SCREEN XS - 576PX
+    576PX < SCREEN S < 768PX
+****************************/
+@media all and (max-width: 768px) {
+
+    /************
+        FOOTER
+    ************/
+    /** FOOTER LEFT **/
+    #footer__left {
+        width: auto;
+    }
+    
+}
+
+
+/****************************
+    SCREEN XS < 576PX
 ****************************/
 @media all and (max-width: 576px) {
 
@@ -10,7 +26,7 @@
     :root {
         --sidebar-l: 50px;
     }
-    
+
     /* make some elements disappear */
     #app__logo,
     #playlist__nav {
@@ -19,14 +35,6 @@
 
     #app__logo-xs {
         display: block;
-    }
-
-    /************
-        FOOTER
-    ************/
-    /** FOOTER LEFT **/
-    #footer__left {
-        width: auto;
     }
 
 }
