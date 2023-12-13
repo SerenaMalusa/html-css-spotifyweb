@@ -8,6 +8,7 @@
     ************/
     /** MAIN **/
     /* MAIN BODY */
+    /* 4 colums per grid */
     #main__body .col {
         width: 25%;
     }
@@ -25,6 +26,7 @@
     ************/
     /** MAIN **/
     /* MAIN BODY */
+    /* 2 colums per grid */
     #main__body .col {
         width: 50%;
     }
@@ -33,6 +35,7 @@
         FOOTER
     ************/
     /** FOOTER LEFT **/
+    /* footer left can now srink */
     #footer__left {
         width: auto;
     }
@@ -49,6 +52,7 @@
         APP-TOP
     ************/
     /** SIDEBAR **/
+    /* make the sidebar smaller */
     :root {
         --sidebar-l: 50px;
     }
@@ -59,6 +63,7 @@
         display: none;
     }
 
+    /* make new elements disappear */
     #app__logo-xs {
         display: block;
     }
