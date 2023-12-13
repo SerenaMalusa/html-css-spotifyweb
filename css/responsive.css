@@ -1,0 +1,14 @@
+/****************************
+    SCREEN XS - 576PX
+****************************/
+@media all and (max-width: 576px) {
+    
+    /************
+        FOOTER
+    ************/
+    /** FOOTER LEFT **/
+    #footer__left {
+        width: auto;
+    }
+
+}
