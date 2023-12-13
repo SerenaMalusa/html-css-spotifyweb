@@ -36,6 +36,12 @@ img {
     max-width: 100%;
 }
 
+/* titles */
+h2,
+h3 {
+    color: var(--text-color-2);
+}
+
 /*******************************
     DEBUG
 *******************************/
@@ -159,7 +165,8 @@ nav .hor-nav__li {
 }
 
 /* MAIN BODY */
-#main__body h2 {
+#main__body h2,
+#main__body .container > h4 {
     padding-bottom:  var(--base-space);
 }
 
