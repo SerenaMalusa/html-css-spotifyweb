@@ -12,15 +12,6 @@
     --sidebar-l: 250px;
 }
 
-/*******************************
-    DEBUG
-*******************************/
-.debug {
-    background-color: azure;
-    border: 2px dotted blue;
-    padding: 20px;
-}
-
 /********************************
     RESET
 ********************************/
@@ -37,6 +28,15 @@ body {
 
 img {
     max-width: 100%;
+}
+
+/*******************************
+    DEBUG
+*******************************/
+.debug {
+    background-color: azure;
+    border: 2px dotted blue;
+    padding: 20px;
 }
 
 /*******************************
