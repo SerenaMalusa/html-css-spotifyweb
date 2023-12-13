@@ -63,7 +63,9 @@ img {
 }
 
 /* PLAYLIST NAV */
-.playlist__nav {
+#playlist__nav {
+    overflow: auto;
+    
     flex-grow: 1;
 }
 
