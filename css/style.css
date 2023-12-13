@@ -1,4 +1,17 @@
 /********************************
+    CUSTOM PROPS
+********************************/
+:root {
+    /* palette */
+    --body-bg: #141922;
+    --footer-bg: #282828;
+    --sidebar-bg: #000000;
+
+    /* spacing */
+    --footer-h: 100px;
+}
+
+/********************************
     RESET
 ********************************/
 *{
@@ -13,4 +26,40 @@ img {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--body-bg);
+}
+
+/*******************************
+    UTILITY
+*******************************/
+.d-flex {
+    display: flex;
+}
+
+/*******************************
+    APP-TOP
+*******************************/
+#app__top {
+    height: calc(100vh - var(--footer-h));
+}
+
+/** SIDEBAR **/
+#app__sidebar {
+    width: 250px;
+    background-color: var(--sidebar-bg);
+
+    flex-shrink: 0;
+}
+
+/** MAIN **/
+#app__main {
+    flex-grow: 1;
+}
+
+/********************************
+    FOOTER
+********************************/
+#app__footer {
+    background-color: var(--footer-bg);
+    height: var(--footer-h);
 }
