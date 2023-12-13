@@ -75,3 +75,8 @@ img {
 
     justify-content: space-between;
 }
+
+/** FOOTER LEFT **/
+#footer__left {
+    width: var(--sidebar-l);
+}
