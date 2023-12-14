@@ -100,6 +100,19 @@ h3 {
     cursor: pointer;
 }
 
+.btn-round {
+    --diameter: 15px;
+
+    border-radius: 50%;
+    border: 2px solid var(--text-color-1);
+    padding: 0;
+    width: var(--diameter);
+    aspect-ratio: 1;
+    color: var(--text-color-1);
+    line-height: calc(var(--diameter)*0.8);
+    text-align: center;
+}
+
 /* nav lists */
 nav .list {
     list-style: none;
@@ -156,7 +169,6 @@ nav .hor-nav__li {
 }
 
 /* APP NAV */
-
 /* link icon colour */
 #app__nav .link__icon {
     filter: invert(36%) sepia(14%) saturate(0%) hue-rotate(221deg) brightness(85%) contrast(81%);
@@ -181,6 +193,23 @@ nav .hor-nav__li {
 /* USER INFO */
 #user-info {
     margin-top: auto;
+}
+
+#user-info [class*="download_"] {
+    display: inline-block;
+    margin-right: var(--base-space);
+}
+
+#user-info .user-info__element {
+    margin-top: var(--base-space);
+}
+
+#user-info .download__text {
+    font-size: 0.8rem;
+}
+
+#user-info .download__btn {
+    font-size: 0.5rem;
 }
 
 /** MAIN **/
