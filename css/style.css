@@ -12,7 +12,8 @@
 
     /* spacing */
     --base-space: 8px;
-    --header-h: 100px;
+    --logo-h: 45px;
+    --header-h: calc(var(--logo-h) + var(--base-space)*2);
     --sidebar-l: 250px;
     --footer-h: 100px;
 }
@@ -128,7 +129,15 @@ nav .hor-nav__li {
     flex-direction: column;
 }
 
+#app__sidebar .sidebar__cnt {
+    padding: var(--base-space);
+}
+
 /* LOGO */
+#app__logo > img {
+    height: var(--logo-h);
+}
+
 #app__logo-xs {
     display: none;
 }
