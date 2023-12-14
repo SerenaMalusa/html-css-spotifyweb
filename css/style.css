@@ -19,6 +19,7 @@
     --rnd-btn-diameter: 15px;
     --user-img-h: calc(var(--logo-h)/1.5);
     --footer-h: 100px;
+    --pr-bar-l: 200px;
 }
 
 /********************************
@@ -289,6 +290,12 @@ nav .hor-nav__li {
     color: var(--text-color-2);
 
     justify-content: space-between;
+    gap: calc(var(--base-space)*10);
+}
+
+#footer__song,
+#footer__right {
+    width: var(--sidebar-l);
 }
 
 /** FOOTER LEFT **/
@@ -318,6 +325,16 @@ nav .hor-nav__li {
 }
 
 /** FOOTER PLAYER **/
+/* footer actions */
+#footer__player {
+    width: calc(100% - var(--sidebar-l)*2 - var(--base-space)*50);
+    min-width: 150px;
+    flex-grow: 1;
+
+    flex-direction: column;
+    align-items: center;
+}
+
 #footer__player .footer__actions {
     padding: var(--base-space) 0;
     
@@ -328,4 +345,29 @@ nav .hor-nav__li {
 
 #footer__player .play-btn {
     font-size: 1.5rem;
+}
+
+/* progress bar */
+#footer__player .footer__pr-bar {
+    padding-top: calc(var(--base-space)*1.5);
+    justify-content: space-between;
+    align-items: center;
+    gap: calc(var(--base-space)*2);
+}
+
+#footer__player [class*="time"] {
+    font-size: 0.7rem;
+}
+
+#footer__player .pr-bar__bar {
+    height: 3px;
+    min-width: var(--pr-bar-l);
+    background-color: var(--text-color-1);
+
+    flex-grow: 1;
+}
+
+/**  FOOTER RIGHT **/
+#footer__right {
+    flex-shrink: 1;   
 }
