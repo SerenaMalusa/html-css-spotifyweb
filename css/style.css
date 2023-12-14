@@ -283,6 +283,7 @@ nav .hor-nav__li {
     FOOTER
 ********************************/
 #app__footer {
+    padding: var(--base-space);
     background-color: var(--footer-bg);
     height: var(--footer-h);
 
@@ -290,6 +291,20 @@ nav .hor-nav__li {
 }
 
 /** FOOTER LEFT **/
-#footer__left {
+#footer__song {
     width: var(--sidebar-l);
+
+    justify-content: space-between;
 }
+
+#footer__song .song__info {
+    align-items: center;
+    gap: var(--base-space);
+    color: var(--text-color-2);
+    font-size: 0.8rem;
+}
+
+#footer__song .song__img {
+    height: calc(var(--footer-h) - var(--base-space)*4);
+}
+
