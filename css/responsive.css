@@ -58,13 +58,12 @@
     }
 
     /* make some elements disappear */
-    #app__logo,
-    #playlist__nav {
+    #app__sidebar .xs-display-n {
         display: none;
-    }
+    } 
 
     /* make new elements appear */
-    #app__logo-xs {
+    #app__sidebar .xs-display-b {
         display: block;
     }
 
