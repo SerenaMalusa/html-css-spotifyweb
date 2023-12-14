@@ -67,13 +67,16 @@
         display: block;
     } 
 
-    /* download button alingment */
-    #user-info .download {
-        text-align: center;
+    /** APP NAV **/
+    /* icons alignment */
+    #app__nav .link__icon {
+        margin: 0 auto;
     }
-    
-    #user-info .download__btn {
-        margin-right: 0;
+
+    /** USER INFO **/
+    /* download button alingment */
+    #user-info .user-info__element {
+        justify-content: center;
     }
 
 }
