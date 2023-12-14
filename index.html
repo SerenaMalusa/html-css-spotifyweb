@@ -30,7 +30,7 @@
     </head>
     <body>
         <!-- top part of the app, display flex -->
-       <div class="d-flex" id="app__top">
+       <div class="overf-hidden d-flex" id="app__top">
 
             <!-- SIDEBAR -->
             <nav class="d-flex" id="app__sidebar">
@@ -46,7 +46,9 @@
                 <!-- END APP NAVBAR -->
 
                 <!-- PLAYLIST NAVBAR -->
-                <nav class="sidebar__cnt debug" id="playlist__nav"></nav>
+                <!-- contenitore che nasconde overflow -->
+                <div class="overf-hidden">                    
+                    <nav class="sidebar__cnt debug" id="playlist__nav"></nav>               </div>
                 <!-- END PLAYLIST NAVBAR -->
 
                 <!-- USER INFO -->

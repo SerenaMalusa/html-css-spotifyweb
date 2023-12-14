@@ -63,7 +63,7 @@
         display: none;
     }
 
-    /* make new elements disappear */
+    /* make new elements appear */
     #app__logo-xs {
         display: block;
     }

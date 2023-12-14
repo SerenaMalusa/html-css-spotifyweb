@@ -76,6 +76,10 @@ h3 {
     display: flex;
 }
 
+.overf-hidden {
+    overflow: hidden;
+}
+
 /* link */
 .link {
     color: inherit;
@@ -132,6 +136,7 @@ nav .hor-nav__li {
 /* PLAYLIST NAV */
 #playlist__nav {
     overflow: auto;
+    height: 100%;
 }
 
 /* USER INFO */
