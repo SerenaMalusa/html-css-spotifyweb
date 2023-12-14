@@ -286,6 +286,7 @@ nav .hor-nav__li {
     padding: var(--base-space);
     background-color: var(--footer-bg);
     height: var(--footer-h);
+    color: var(--text-color-2);
 
     justify-content: space-between;
 }
@@ -293,8 +294,7 @@ nav .hor-nav__li {
 /** FOOTER LEFT **/
 #footer__song {
     width: var(--sidebar-l);
-    color: var(--text-color-2);
-
+    
     justify-content: space-between;
 }
 
@@ -317,3 +317,15 @@ nav .hor-nav__li {
     gap: calc(var(--base-space)*2);
 }
 
+/** FOOTER PLAYER **/
+#footer__player .footer__actions {
+    padding: var(--base-space) 0;
+    
+    justify-content: center;
+    align-items: center;
+    gap: calc(var(--base-space)*4);
+}
+
+#footer__player .play-btn {
+    font-size: 1.5rem;
+}
