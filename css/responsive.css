@@ -38,6 +38,15 @@
     /* footer left can now srink */
     #footer__song {
         width: auto;
+
+        gap: calc(var(--base-space)*2);
+    }
+
+    /* action icons go vertical */
+    #footer__song .song__actions.d-flex {
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
     }
 
 }

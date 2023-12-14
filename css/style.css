@@ -293,18 +293,27 @@ nav .hor-nav__li {
 /** FOOTER LEFT **/
 #footer__song {
     width: var(--sidebar-l);
+    color: var(--text-color-2);
 
     justify-content: space-between;
 }
 
-#footer__song .song__info {
+#footer__song [class*="song"].d-flex {
     align-items: center;
     gap: var(--base-space);
-    color: var(--text-color-2);
+    
     font-size: 0.8rem;
 }
 
 #footer__song .song__img {
-    height: calc(var(--footer-h) - var(--base-space)*4);
+    height: var(--logo-h);
+}
+
+#footer__song .song__actions.d-flex  {
+    padding-right: calc(var(--base-space)*2);
+    color: var(--text-color-1);
+    font-size: 1.1rem;
+
+    gap: calc(var(--base-space)*2);
 }
 
