@@ -65,6 +65,15 @@
     /* make new elements appear */
     #app__sidebar .xs-display-b {
         display: block;
+    } 
+
+    /* download button alingment */
+    #user-info .download {
+        text-align: center;
+    }
+    
+    #user-info .download__btn {
+        margin-right: 0;
     }
 
 }
