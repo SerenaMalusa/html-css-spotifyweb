@@ -105,13 +105,17 @@ nav .list {
     list-style: none;
 }
 
+nav li {
+    padding: calc(var(--base-space)/2) 0;
+}
+
 nav .hor-nav__li {
     display: inline-block;
     padding: var(--base-space);
 }
 
 .link__icon {
-    height: calc(var(--logo-h)/1.2);
+    height: calc(var(--logo-h)/1.4);
 }
 
 /*******************************
@@ -123,15 +127,12 @@ nav .hor-nav__li {
 
 /** SIDEBAR **/
 #app__sidebar {
+    padding: var(--base-space);
     width: var(--sidebar-l);
     background-color: var(--sidebar-bg);
 
     flex-shrink: 0;
     flex-direction: column;
-}
-
-#app__sidebar .sidebar__cnt {
-    padding: var(--base-space);
 }
 
 /* LOGO */
