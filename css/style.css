@@ -313,6 +313,12 @@ nav .hor-nav__li {
     vertical-align: middle;
 }
 
+/* hover effects */
+#main__header .btn:hover {
+    /* padding: var(--base-space) 40px; */
+    padding: calc(var(--base-space)*1.2) 60px;
+}
+
 /* MAIN BODY */
 #main__body h2,
 #main__body .container > h4 {
@@ -504,6 +510,11 @@ nav .hor-nav__li {
     justify-content: flex-end;
     align-items: center;  
     gap: calc(var(--base-space)*1.5);  
+}
+
+/* hover effects */
+#footer__actions > i {
+    cursor: pointer;
 }
 
 /* progress bar */
