@@ -102,7 +102,7 @@ h3 {
 .btn {
     border-radius: 50px;
     border: 2px solid var(--text-color-2);
-    padding: var(--base-space) 40px;
+    padding: var(--base-space) calc(var(--base-space)*5);
     color: var(--text-color-2);
     text-transform: uppercase;
 }
@@ -315,8 +315,9 @@ nav .hor-nav__li {
 
 /* hover effects */
 #main__header .btn:hover {
-    /* padding: var(--base-space) 40px; */
-    padding: calc(var(--base-space)*1.2) 60px;
+    /* og-padding: var(--base-space) 40px; */
+    padding: calc(var(--base-space)*1.2) calc(var(--base-space)*7.5);
+    font-size: 1.2rem;
 }
 
 /* MAIN BODY */
@@ -369,6 +370,34 @@ nav .hor-nav__li {
     height: auto;
     aspect-ratio: 1;
     object-fit: cover;
+}
+
+/* hover effects */
+#main__body .card figure {
+    position: relative;
+}
+
+#main__body .card .card__play-bg {
+    background-color: var(--header-bg);
+    width: 100%;
+    aspect-ratio: 1;
+
+    position: absolute;
+    top: 0;
+}
+
+#main__body .card .card__play {
+    font-size: 7rem;
+    color: var(--text-color-2);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#main__body figure:hover > .hover-show {
+    display: block;
 }
 
 /********************************
