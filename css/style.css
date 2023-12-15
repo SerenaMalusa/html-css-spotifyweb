@@ -492,6 +492,10 @@ nav .hor-nav__li {
 }
 
 /* hover effects */
+#footer__song:hover {
+    cursor: pointer;
+}
+
 #footer__song:hover .song__title {
     text-decoration: underline;
 }
