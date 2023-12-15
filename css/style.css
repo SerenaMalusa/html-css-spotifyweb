@@ -180,7 +180,7 @@ nav .hor-nav__li {
     flex-direction: column;
 }
 
-/* sapcing */
+/* spacing */
 #app__sidebar .sidebar__cnt {
     padding: 0 var(--base-space);
 }
