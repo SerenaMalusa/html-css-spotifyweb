@@ -356,7 +356,6 @@ nav .hor-nav__li {
     background-color: var(--active-color);
 }
 
-
 /* main cards */
 #main__body .card {
     text-align: center;
@@ -389,6 +388,7 @@ nav .hor-nav__li {
 
     position: absolute;
     top: 0;
+    z-index: 1;
 }
 
 #main__body .card .card__play {
@@ -399,6 +399,7 @@ nav .hor-nav__li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
 #main__body .card:hover .hover-show {
