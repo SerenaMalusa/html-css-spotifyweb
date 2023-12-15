@@ -127,7 +127,7 @@ nav .nav__title {
 
 nav li,
 nav .nav__title,
-nav .link {
+nav > .link {
     padding: calc(var(--base-space)/2) 0;
 }
 
