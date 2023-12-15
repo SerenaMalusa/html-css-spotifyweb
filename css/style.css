@@ -366,7 +366,7 @@ nav .hor-nav__li {
     margin-bottom: var(--base-space);
 }
 
-#main__body .img-round > img {
+#main__body .img-round img {
     height: auto;
     aspect-ratio: 1;
     object-fit: cover;
@@ -396,7 +396,7 @@ nav .hor-nav__li {
     transform: translate(-50%, -50%);
 }
 
-#main__body figure:hover > .hover-show {
+#main__body .card:hover .hover-show {
     display: block;
 }
 
