@@ -63,7 +63,7 @@
 
     /** FOOTER CENTER **/
     /* reduce icond gap */
-    #footer__player .footer__actions {
+    #footer__player .player__actions {
         gap: calc(var(--base-space)*2);
     }
 
@@ -122,9 +122,15 @@
 
     /** FOOTER CENTER **/
     /* reduce icond gap */
-    #footer__player .footer__actions {
+    #footer__player .player__actions {
         gap: calc(var(--base-space)*1.5);
     }
 
+    /**  FOOTER RIGHT **/
+    #footer__actions {
+        font-size: 0.5rem;
+    
+        gap: var(--base-space);  
+    }
 
 }

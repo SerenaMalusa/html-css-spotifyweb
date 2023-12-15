@@ -296,13 +296,46 @@ nav .hor-nav__li {
     color: var(--text-color-2);
 
     justify-content: space-between;
-    /* gap: calc(var(--base-space)*10); */
 }
 
 #footer__song,
 #footer__right {
     width: var(--sidebar-l);
 }
+
+/* progress bars */
+#app__footer .pr-bar__bar {
+    height: var(--pr-bar-h);
+    background-color: var(--text-color-1);
+
+    flex-grow: 1;
+}
+
+#app__footer .pr-bar__percentage-bar {
+    width: 20%;
+    height: 100%;
+    background-color: var(--text-color-2);
+
+    position: relative;
+}
+
+#app__footer .pr-bar__progress-dot {
+    border-radius: 50%;
+    height: calc( var(--pr-bar-h)*4);
+    aspect-ratio: 1;
+    background-color: var(--text-color-2);
+    /* border: 1px solid green; */
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+#app__footer .pr-bar:hover .hover-show {
+    display: block;
+}
+
 
 /** FOOTER LEFT **/
 #footer__song {
@@ -337,7 +370,7 @@ nav .hor-nav__li {
     max-width: var(--footer-player-l);
 }
 
-#footer__player .footer__actions {
+#footer__player .player__actions {
     padding: var(--base-space) 0;
     
     justify-content: center;
@@ -350,7 +383,7 @@ nav .hor-nav__li {
 }
 
 /* progress bar */
-#footer__player .footer__pr-bar {
+#footer__player .pr-bar {
     padding-top: calc(var(--base-space)*1.5);
     justify-content: space-between;
     align-items: center;
@@ -361,39 +394,17 @@ nav .hor-nav__li {
     font-size: 0.7rem;
 }
 
-#footer__player .pr-bar__bar {
-    height: var(--pr-bar-h);
-    background-color: var(--text-color-1);
-
-    flex-grow: 1;
-}
-
-#footer__player .pr-bar__percentage-bar {
-    width: 20%;
-    height: 100%;
-    background-color: var(--text-color-2);
-
-    position: relative;
-}
-
-#footer__player .pr-bar__progress-dot {
-    border-radius: 50%;
-    height: calc( var(--pr-bar-h)*4);
-    aspect-ratio: 1;
-    background-color: var(--text-color-2);
-    /* border: 1px solid green; */
-
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translate(50%, -50%);
-}
-
-#footer__player .footer__pr-bar:hover .hover-show {
-    display: block;
-}
-
 /**  FOOTER RIGHT **/
-#footer__right {
-    flex-shrink: 1;   
+#footer__actions {
+    width: var(--sidebar-l);
+    font-size: 0.7rem;
+    
+    justify-content: flex-end;
+    align-items: center;  
+    gap: calc(var(--base-space)*1.5);  
+}
+
+/* progress bar */
+#footer__actions .pr-bar {
+    width: 40%;
 }
