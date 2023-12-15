@@ -387,7 +387,7 @@ nav .hor-nav__li {
 }
 
 #main__body .card .card__play {
-    font-size: 7rem;
+    font-size: 5rem;
     color: var(--text-color-2);
 
     position: absolute;
