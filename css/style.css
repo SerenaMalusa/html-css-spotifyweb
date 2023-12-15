@@ -9,6 +9,7 @@
     --footer-bg: #282828;
     --text-color-1: #5a5a5a;
     --text-color-2: #f9f9f9;
+    --active-color: rgba(176,250,47,1);
 
     /* spacing */
     --base-space: 8px;
@@ -20,7 +21,8 @@
     --user-img-h: calc(var(--logo-h)/1.5);
     --footer-h: 100px;
     --footer-player-l: 700px;
-    --pr-bar-h: 3px;
+    --bar-h: 3px;
+    --active-bar-thick: 3px;
 }
 
 /********************************
@@ -140,6 +142,11 @@ nav .hor-nav__li {
     height: var(--icon-h);
 }
 
+/* link active */
+.link.active {
+    color: var(--text-color-2);
+}
+
 /* round images */
 .img-round {
     border-radius: 50%;
@@ -205,8 +212,12 @@ nav .hor-nav__li {
 }
 
 #app__nav .link.active {
-    box-shadow: -3px 0px 0px 0px rgba(176,250,47,1);
+    box-shadow: calc(-1 * var(--active-bar-thick)) 0px 0px 0px var(--active-color);
     z-index: 1;
+}
+
+#app__nav .link.active .link__icon {
+    filter: invert(0) sepia(100%) saturate(2%) hue-rotate(211deg) brightness(111%) contrast(101%);
 }
 
 /* link icon colour */
@@ -308,6 +319,22 @@ nav .hor-nav__li {
     text-transform: uppercase;
 }
 
+#main__nav li {
+    text-align: center;
+}
+
+#main__nav .link.active:after {
+    content: "";
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(var(--base-space)/2);
+    height: var(--active-bar-thick);
+    width: calc(var(--base-space)*5);
+    background-color: var(--active-color);
+}
+
+
 /* main cards */
 #main__body .card {
     text-align: center;
@@ -347,7 +374,7 @@ nav .hor-nav__li {
 
 /* progress bars */
 #app__footer .pr-bar__bar {
-    height: var(--pr-bar-h);
+    height: var(--bar-h);
     background-color: var(--text-color-1);
 
     flex-grow: 1;
@@ -363,7 +390,7 @@ nav .hor-nav__li {
 
 #app__footer .pr-bar__progress-dot {
     border-radius: 50%;
-    height: calc( var(--pr-bar-h)*4);
+    height: calc( var(--bar-h)*4);
     aspect-ratio: 1;
     background-color: var(--text-color-2);
     /* border: 1px solid green; */
