@@ -273,11 +273,16 @@ nav .hor-nav__li {
     font-size: 0.8rem;
 }
 
-/* user info */
 #user-info .download__btn {
     font-size: 0.5rem;
 }
 
+#user-info .link:hover .download__btn {
+    border: 2px solid var(--text-color-2);
+    color: var(--text-color-2);
+}
+
+/* user info */
 #user-info .user__img {
     height: var(--user-img-h);
     background-color: var(--text-color-1);
