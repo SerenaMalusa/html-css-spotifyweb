@@ -292,10 +292,16 @@ nav .hor-nav__li {
     padding-bottom: var(--base-space);
 }
 
-#main__body .card .song__img {
-    aspect-ratio: 1;
+#main__body .card .img-round {
+    padding: 0;
+    margin-bottom: var(--base-space);
 }
 
+#main__body .img-round > img {
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
 
 /********************************
     FOOTER
