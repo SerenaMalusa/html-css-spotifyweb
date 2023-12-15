@@ -175,7 +175,7 @@ nav .hor-nav__li {
 }
 
 /* LOGO */
-#app__logo > img {
+[id*="app__logo"] > img {
     height: var(--logo-h);
 }
 
