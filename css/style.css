@@ -250,7 +250,7 @@ nav .hor-nav__li {
 #playlist__nav .link__icon {
     height: var(--logo-h);
     aspect-ratio: 1;
-    backdrop-filter: invert(36%) sepia(14%) saturate(0%) hue-rotate(221deg) brightness(85%) contrast(81%);;
+    filter: invert(36%) sepia(14%) saturate(0%) hue-rotate(221deg) brightness(85%) contrast(81%);;
     color: var(--body-bg);
     font-size: 3rem;
     text-align: center;
