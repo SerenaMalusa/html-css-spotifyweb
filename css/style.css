@@ -358,10 +358,15 @@ nav .hor-nav__li {
 
 #footer__player .pr-bar__bar {
     height: 3px;
-    /* min-width: var(--pr-bar-l); */
     background-color: var(--text-color-1);
 
     flex-grow: 1;
+}
+
+#footer__player .pr-bar__percentage-bar {
+    width: 20%;
+    height: 100%;
+    background-color: var(--text-color-2);
 }
 
 /**  FOOTER RIGHT **/
