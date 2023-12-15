@@ -161,12 +161,24 @@ nav .hor-nav__li {
 
 /** SIDEBAR **/
 #app__sidebar {
-    padding: var(--base-space);
+    /* padding: var(--base-space); */
     width: var(--sidebar-l);
     background-color: var(--sidebar-bg);
 
     flex-shrink: 0;
     flex-direction: column;
+}
+
+#app__sidebar .sidebar__cnt {
+    padding: 0 var(--base-space);
+}
+
+#app__sidebar .sidebar__cnt:first-child {
+    padding-top: var(--base-space);
+}
+
+#app__sidebar .sidebar__cnt:last-child {
+    padding-bottom: var(--base-space);
 }
 
 #app__sidebar .link.d-flex {
@@ -184,6 +196,19 @@ nav .hor-nav__li {
 }
 
 /* APP NAV */
+#app__nav.sidebar__cnt {
+    padding-left: calc(var(--base-space)/2);
+}
+
+#app__nav .link {
+    padding-left: calc(var(--base-space)/2);
+}
+
+#app__nav .link.active {
+    box-shadow: -3px 0px 0px 0px rgba(176,250,47,1);
+    z-index: 1;
+}
+
 /* link icon colour */
 #app__nav .link__icon {
     filter: invert(36%) sepia(14%) saturate(0%) hue-rotate(221deg) brightness(85%) contrast(81%);
