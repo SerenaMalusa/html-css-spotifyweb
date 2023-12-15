@@ -13,6 +13,11 @@
         width: 25%;
     }
 
+    /* hover effect */
+    #main__body .card .card__play {
+        font-size: 4rem;
+    }
+
     /************
         FOOTER
     ************/
@@ -37,6 +42,11 @@
     /* 2 colums per grid */
     #main__body .col {
         width: 50%;
+    }
+
+    /* hover effect */
+    #main__body .card .card__play {
+        font-size: 5rem;
     }
 
     /************
