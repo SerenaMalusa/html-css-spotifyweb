@@ -424,5 +424,6 @@ nav .hor-nav__li {
 
 /* progress bar */
 #footer__actions .pr-bar {
-    width: 40%;
+    max-width: 400px;
+    width: 60%;
 }
