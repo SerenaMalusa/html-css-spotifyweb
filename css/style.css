@@ -20,7 +20,7 @@
     --user-img-h: calc(var(--logo-h)/1.5);
     --footer-h: 100px;
     --footer-player-l: 700px;
-    --pr-bar-l: 200px;
+    --pr-bar-h: 3px;
 }
 
 /********************************
@@ -145,6 +145,11 @@ nav .hor-nav__li {
     border-radius: 50%;
     aspect-ratio: 1;
     overflow: hidden;
+}
+
+/* items to be shown only in hover */
+.hover-show {
+    display: none;
 }
 
 /*******************************
@@ -357,7 +362,7 @@ nav .hor-nav__li {
 }
 
 #footer__player .pr-bar__bar {
-    height: 3px;
+    height: var(--pr-bar-h);
     background-color: var(--text-color-1);
 
     flex-grow: 1;
@@ -367,6 +372,25 @@ nav .hor-nav__li {
     width: 20%;
     height: 100%;
     background-color: var(--text-color-2);
+
+    position: relative;
+}
+
+#footer__player .pr-bar__progress-dot {
+    border-radius: 50%;
+    height: calc( var(--pr-bar-h)*4);
+    aspect-ratio: 1;
+    background-color: var(--text-color-2);
+    /* border: 1px solid green; */
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+#footer__player .footer__pr-bar:hover .hover-show {
+    display: block;
 }
 
 /**  FOOTER RIGHT **/
