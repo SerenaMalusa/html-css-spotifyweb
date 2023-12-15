@@ -94,6 +94,10 @@ h3 {
     text-decoration: none;
 }
 
+.link:hover {
+    color: var(--text-color-2);
+}
+
 /* buttons */
 .btn {
     border-radius: 50px;
@@ -176,6 +180,7 @@ nav .hor-nav__li {
     flex-direction: column;
 }
 
+/* sapcing */
 #app__sidebar .sidebar__cnt {
     padding: 0 var(--base-space);
 }
@@ -191,6 +196,11 @@ nav .hor-nav__li {
 #app__sidebar .link.d-flex {
     align-items: center;
     gap: var(--base-space);
+}
+
+/* link icon hover */
+#app__sidebar .link:hover .link__icon {
+    filter: invert(0%) sepia(100%) saturate(2%) hue-rotate(211deg) brightness(111%) contrast(101%);
 }
 
 /* LOGO */
@@ -217,7 +227,7 @@ nav .hor-nav__li {
 }
 
 #app__nav .link.active .link__icon {
-    filter: invert(0) sepia(100%) saturate(2%) hue-rotate(211deg) brightness(111%) contrast(101%);
+    filter: invert(0%) sepia(100%) saturate(2%) hue-rotate(211deg) brightness(111%) contrast(101%);
 }
 
 /* link icon colour */
@@ -380,6 +390,10 @@ nav .hor-nav__li {
     flex-grow: 1;
 }
 
+#app__footer .pr-bar__bar:hover {
+    cursor: pointer;
+}
+
 #app__footer .pr-bar__percentage-bar {
     width: 20%;
     height: 100%;
@@ -403,6 +417,10 @@ nav .hor-nav__li {
 
 #app__footer .pr-bar:hover .hover-show {
     display: block;
+}
+
+#app__footer .pr-bar:hover .pr-bar__percentage-bar {
+    background-color: var(--active-color);
 }
 
 
@@ -433,6 +451,11 @@ nav .hor-nav__li {
     gap: calc(var(--base-space)*2);
 }
 
+/* hover effects */
+#footer__song:hover .song__title {
+    text-decoration: underline;
+}
+
 /** FOOTER PLAYER **/
 /* footer actions */
 #footer__player {
@@ -450,6 +473,15 @@ nav .hor-nav__li {
 
 #footer__player .play-btn {
     font-size: 1.5rem;
+}
+
+/* hover effects */
+#footer__player .player__actions i {
+    cursor: pointer;
+}
+
+#footer__player .play-btn:hover {
+    font-size: 1.8rem;
 }
 
 /* progress bar */

@@ -195,19 +195,22 @@
 
                 <!-- USER INFO -->
                 <div class="sidebar__cnt" id="user-info">
-                    <div class="download user-info__element d-flex">
-                        <div class="btn btn-round download__btn">
+                    <a class="link download user-info__element d-flex" href="#">
+                        <div class="icon btn btn-round download__btn">
                             <i class="fa-solid fa-arrow-down"></i>
                         </div>
                         <span class="download__text xs-display-n">Installa app</span>
-                    </div>
+                    </a>
+                    
                     <hr class="user-info__divider user-info__element">
-                    <div class="user user-info__element d-flex">
-                        <div class="img-round">
+
+                    <a class="link user user-info__element d-flex" href="#">
+                        <div class="icon img-round">
                             <img class="user__img" src="./img/profile.svg" alt="user image">
                         </div>
                         <span class="user__name xs-display-n">John Doe</span>
-                    </div>
+                    </a>
+                   
                 </div>
                 <!-- END USER INFO -->
 
@@ -407,8 +410,13 @@
                     </div>
                 </div>
                 <div class="song__actions d-flex">
-                    <i class="song__fovourites fa-regular fa-heart"></i>
-                    <i class="song__folder fa-regular fa-folder"></i>
+                    <a class="link" href="#">
+                        <i class="song__fovourites fa-regular fa-heart"></i>
+                    </a>
+                    <a href="#" class="link">
+                        <i class="song__folder fa-regular fa-folder"></i>
+                    </a>
+                    
                 </div>
             </div>
             <!-- END FOOTER LEFT -->
