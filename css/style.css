@@ -283,7 +283,18 @@ nav .hor-nav__li {
     text-transform: uppercase;
 }
 
-/* recently played */
+/* main cards */
+#main__body .card {
+    text-align: center;
+}
+
+#main__body .card__element {
+    padding-bottom: var(--base-space);
+}
+
+#main__body .card .song__img {
+    aspect-ratio: 1;
+}
 
 
 /********************************
@@ -353,6 +364,7 @@ nav .hor-nav__li {
 
 #footer__song .song__img {
     height: var(--logo-h);
+    aspect-ratio: 1;
 }
 
 #footer__song .song__actions.d-flex  {
